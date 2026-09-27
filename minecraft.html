@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minecraft Plans - SoloCloud Premium Hosting</title>
-    <meta name="description" content="Premium Minecraft server hosting with low latency, powerful hardware, NVMe SSDs, and 24/7 support. Starting from ₹199/mo.">
+    <meta name="description" content="Premium Minecraft server hosting with low latency, powerful hardware, NVMe SSDs, and 24/7 support. Starting from ₹99/mo.">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -194,6 +194,9 @@
 
         .pricing-panel { display: none; }
         .pricing-panel.active { display: block; }
+
+        .edition-panel { display: none; }
+        .edition-panel.active { display: block; }
 
         .pricing-info-banner { display: flex; align-items: center; gap: 1rem; padding: 1rem 1.5rem; border-radius: 12px; border: 1px solid var(--mc-border); background: var(--mc-subtle); margin-bottom: 2.5rem; max-width: 1200px; margin-left: auto; margin-right: auto; }
         .pricing-info-banner i { color: var(--mc); font-size: 1.2rem; flex-shrink: 0; }
@@ -559,12 +562,11 @@
     <div class="pricing-tabs">
         <button class="pricing-tab-btn active" onclick="switchPricingTab('premium', this)">
             <i class="fa-solid fa-crown"></i> Premium Plans
-    <button class="pricing-tab-btn" onclick="window.location.href='https://billing.solocloud.site/products/minecraft_hosting/custom-plan/checkout?plan=174&options[9]=10&options[16]=17&options[25]=26&options[30]=31&options[40]=41&options[55]=56&options[57]=58&options[72]=73&options[79]=80'">
-        <i class="fa-solid fa-sliders"></i> Custom Plan
-    </button>
-</div>
-
-
+        </button>
+        <button class="pricing-tab-btn" onclick="window.location.href='https://billing.solocloud.site/products/minecraft_hosting/custom-plan/checkout?plan=174&options[9]=10&options[16]=17&options[25]=26&options[30]=31&options[40]=41&options[55]=56&options[57]=58&options[72]=73&options[79]=80'">
+            <i class="fa-solid fa-sliders"></i> Custom Plan
+        </button>
+    </div>
 
     <!-- PREMIUM INDIA PLANS -->
     <div class="pricing-panel active" id="tab-premium">
@@ -572,247 +574,512 @@
             <i class="fa-solid fa-location-dot"></i>
             <p><strong> Premium Plans</strong> · 3.7 GHz High-Frequency CPUs · Low Latency for South Asia · 24/7 Online · Anti-DDoS Protection</p>
         </div>
-        <div class="plans-grid">
 
-            
-            <!-- GRASS -->
-            <div class="plan-card">
-                <div class="plan-name">Grass Plan</div>
-                <div class="plan-price">₹139<span>/mo</span></div>
-                <div class="plan-divider"></div>
-                <div class="plan-specs-label">Specifications</div>
-                <div class="plan-specs">
-                    <div class="plan-spec"><i class="fa-solid fa-memory"></i><span class="plan-spec-text">2 GB RAM</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-microchip"></i><span class="plan-spec-text">70% CPU</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-hard-drive"></i><span class="plan-spec-text">10 GB NVMe SSD</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-cloud-arrow-up"></i><span class="plan-spec-text">1 Cloud Backup</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-network-wired"></i><span class="plan-spec-text">1 Allocation Port</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-database"></i><span class="plan-spec-text">1 Database</span></div>
-                </div>
-                <div class="plan-features">
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> 24/7 Online</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> India Location Premium</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Unlimited Player Slots</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Powered by AMD EPYC / Intel CPUs</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Advanced DDoS Protection</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Premium Game Panel</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Free Subdomain</div>
-                </div>
-                <a href="https://billing.solocloud.site/products/premium-minecraft-server-plans/grass-plan/checkout" class="plan-btn">Get Grass Plan →</a>
-            </div>
- 
-            <!-- WOOD -->
-            <div class="plan-card">
-                <div class="plan-name">Wood Plan</div>
-                <div class="plan-price">₹189<span>/mo</span></div>
-                <div class="plan-divider"></div>
-                <div class="plan-specs-label">Specifications</div>
-                <div class="plan-specs">
-                    <div class="plan-spec"><i class="fa-solid fa-memory"></i><span class="plan-spec-text">4 GB RAM</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-microchip"></i><span class="plan-spec-text">80% CPU</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-hard-drive"></i><span class="plan-spec-text">12 GB NVMe SSD</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-cloud-arrow-up"></i><span class="plan-spec-text">1 Cloud Backup</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-network-wired"></i><span class="plan-spec-text">1 Allocation Port</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-database"></i><span class="plan-spec-text">1 Database</span></div>
-                </div>
-                <div class="plan-features">
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> 24/7 Online</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> India Location Premium</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Unlimited Player Slots</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Powered by AMD EPYC / Intel CPUs</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Advanced DDoS Protection</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Premium Game Panel</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Free Subdomain</div>
-                </div>
-                <a href="https://billing.solocloud.site/products/premium-minecraft-server-plans/wood-plan/checkout" class="plan-btn">Get Wood Plan →</a>
-            </div>
- 
-            <!-- STONE -->
-            <div class="plan-card">
-                <div class="plan-name">Stone Plan</div>
-                <div class="plan-price">₹249<span>/mo</span></div>
-                <div class="plan-divider"></div>
-                <div class="plan-specs-label">Specifications</div>
-                <div class="plan-specs">
-                    <div class="plan-spec"><i class="fa-solid fa-memory"></i><span class="plan-spec-text">6 GB RAM</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-microchip"></i><span class="plan-spec-text">100% CPU</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-hard-drive"></i><span class="plan-spec-text">15 GB NVMe SSD</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-cloud-arrow-up"></i><span class="plan-spec-text">2 Cloud Backups</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-network-wired"></i><span class="plan-spec-text">2 Allocation Ports</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-database"></i><span class="plan-spec-text">1 Database</span></div>
-                </div>
-                <div class="plan-features">
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> 24/7 Online</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> India Location Premium</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Unlimited Player Slots</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Powered by AMD EPYC / Intel CPUs</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Advanced DDoS Protection</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Premium Game Panel</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Free Subdomain</div>
-                </div>
-                <a href="https://billing.solocloud.site/products/premium-minecraft-server-plans/stone-plan/checkout" class="plan-btn">Get Stone Plan →</a>
-            </div>
- 
-            <!-- IRON -->
-            <div class="plan-card">
-                <div class="plan-name">Iron Plan</div>
-                <div class="plan-price">₹299<span>/mo</span></div>
-                <div class="plan-divider"></div>
-                <div class="plan-specs-label">Specifications</div>
-                <div class="plan-specs">
-                    <div class="plan-spec"><i class="fa-solid fa-memory"></i><span class="plan-spec-text">8 GB RAM</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-microchip"></i><span class="plan-spec-text">100% CPU</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-hard-drive"></i><span class="plan-spec-text">20 GB NVMe SSD</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-cloud-arrow-up"></i><span class="plan-spec-text">2 Cloud Backups</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-network-wired"></i><span class="plan-spec-text">2 Allocation Ports</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-database"></i><span class="plan-spec-text">1 Database</span></div>
-                </div>
-                <div class="plan-features">
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> 24/7 Online</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> India Location Premium</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Unlimited Player Slots</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Powered by AMD EPYC / Intel CPUs</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Advanced DDoS Protection</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Premium Game Panel</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Free Subdomain</div>
-                </div>
-                <a href="https://billing.solocloud.site/products/premium-minecraft-server-plans/iron-plan/checkout" class="plan-btn">Get Iron Plan →</a>
-            </div>
- 
-            <!-- GOLD -->
-            <div class="plan-card popular">
-                <div class="plan-badge">Popular</div>
-                <div class="plan-name">Gold Plan</div>
-                <div class="plan-price">₹399<span>/mo</span></div>
-                <div class="plan-divider"></div>
-                <div class="plan-specs-label">Specifications</div>
-                <div class="plan-specs">
-                    <div class="plan-spec"><i class="fa-solid fa-memory"></i><span class="plan-spec-text">12 GB RAM</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-microchip"></i><span class="plan-spec-text">100% CPU</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-hard-drive"></i><span class="plan-spec-text">20 GB NVMe SSD</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-cloud-arrow-up"></i><span class="plan-spec-text">3 Cloud Backups</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-network-wired"></i><span class="plan-spec-text">3 Allocation Ports</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-database"></i><span class="plan-spec-text">2 Databases</span></div>
-                </div>
-                <div class="plan-features">
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> 24/7 Online</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> India Location Premium</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Unlimited Player Slots</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Powered by AMD EPYC / Intel CPUs</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Advanced DDoS Protection</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Premium Game Panel</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Free Subdomain</div>
-                </div>
-                <a href="https://billing.solocloud.site/products/premium-minecraft-server-plans/gold-plan/checkout" class="plan-btn">Get Gold Plan →</a>
-            </div>
- 
-            <!-- EMERALD -->
-            <div class="plan-card">
-                <div class="plan-name">Emerald Plan</div>
-                <div class="plan-price">₹599<span>/mo</span></div>
-                <div class="plan-divider"></div>
-                <div class="plan-specs-label">Specifications</div>
-                <div class="plan-specs">
-                    <div class="plan-spec"><i class="fa-solid fa-memory"></i><span class="plan-spec-text">16 GB RAM</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-microchip"></i><span class="plan-spec-text">200% CPU</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-hard-drive"></i><span class="plan-spec-text">30 GB NVMe SSD</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-cloud-arrow-up"></i><span class="plan-spec-text">4 Cloud Backups</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-network-wired"></i><span class="plan-spec-text">3 Allocation Ports</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-database"></i><span class="plan-spec-text">2 Databases</span></div>
-                </div>
-                <div class="plan-features">
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> 24/7 Online</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> India Location Premium</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Unlimited Player Slots</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Powered by AMD EPYC / Intel CPUs</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Advanced DDoS Protection</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Premium Game Panel</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Free Subdomain</div>
-                </div>
-                <a href="https://billing.solocloud.site/products/premium-minecraft-server-plans/emerald-plan/checkout" class="plan-btn">Get Emerald Plan →</a>
-            </div>
- 
-            <!-- DIAMOND -->
-            <div class="plan-card">
-                <div class="plan-name">Diamond Plan</div>
-                <div class="plan-price">₹899<span>/mo</span></div>
-                <div class="plan-divider"></div>
-                <div class="plan-specs-label">Specifications</div>
-                <div class="plan-specs">
-                    <div class="plan-spec"><i class="fa-solid fa-memory"></i><span class="plan-spec-text">24 GB RAM</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-microchip"></i><span class="plan-spec-text">300% CPU</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-hard-drive"></i><span class="plan-spec-text">40 GB NVMe SSD</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-cloud-arrow-up"></i><span class="plan-spec-text">5 Cloud Backups</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-network-wired"></i><span class="plan-spec-text">4 Allocation Ports</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-database"></i><span class="plan-spec-text">3 Databases</span></div>
-                </div>
-                <div class="plan-features">
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> 24/7 Online</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> India Location Premium</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Unlimited Player Slots</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Powered by AMD EPYC / Intel CPUs</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Advanced DDoS Protection</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Premium Game Panel</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Free Subdomain</div>
-                </div>
-                <a href="https://billing.solocloud.site/products/premium-minecraft-server-plans/diamond-plan/checkout" class="plan-btn">Get Diamond Plan →</a>
-            </div>
- 
-            <!-- OBSIDIAN -->
-            <div class="plan-card">
-                <div class="plan-name">Obsidian Plan</div>
-                <div class="plan-price">₹1,299<span>/mo</span></div>
-                <div class="plan-divider"></div>
-                <div class="plan-specs-label">Specifications</div>
-                <div class="plan-specs">
-                    <div class="plan-spec"><i class="fa-solid fa-memory"></i><span class="plan-spec-text">32 GB RAM</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-microchip"></i><span class="plan-spec-text">400% CPU</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-hard-drive"></i><span class="plan-spec-text">50 GB NVMe SSD</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-cloud-arrow-up"></i><span class="plan-spec-text">5 Cloud Backups</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-network-wired"></i><span class="plan-spec-text">4 Allocation Ports</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-database"></i><span class="plan-spec-text">4 Databases</span></div>
-                </div>
-                <div class="plan-features">
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> 24/7 Online</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> India Location Premium</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Unlimited Player Slots</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Powered by AMD EPYC / Intel CPUs</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Advanced DDoS Protection</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Premium Game Panel</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Free Subdomain</div>
-                </div>
-                <a href="https://billing.solocloud.site/products/premium-minecraft-server-plans/obsidian-plan/checkout" class="plan-btn">Get Obsidian Plan →</a>
-            </div>
- 
-            <!-- NETHERITE -->
-            <div class="plan-card">
-                <div class="plan-name">Netherite Plan</div>
-                <div class="plan-price">₹2,299<span>/mo</span></div>
-                <div class="plan-divider"></div>
-                <div class="plan-specs-label">Specifications</div>
-                <div class="plan-specs">
-                    <div class="plan-spec"><i class="fa-solid fa-memory"></i><span class="plan-spec-text">64 GB RAM</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-microchip"></i><span class="plan-spec-text">600% CPU</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-hard-drive"></i><span class="plan-spec-text">60 GB NVMe SSD</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-cloud-arrow-up"></i><span class="plan-spec-text">7 Cloud Backups</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-network-wired"></i><span class="plan-spec-text">5 Allocation Ports</span></div>
-                    <div class="plan-spec"><i class="fa-solid fa-database"></i><span class="plan-spec-text">5 Databases</span></div>
-                </div>
-                <div class="plan-features">
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> 24/7 Online</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> India Location Premium</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Unlimited Player Slots</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Powered by AMD EPYC / Intel CPUs</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Advanced DDoS Protection</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Premium Game Panel</div>
-                    <div class="plan-feature"><i class="fa-solid fa-check"></i> Free Subdomain</div>
-                </div>
-                <a href="https://billing.solocloud.site/products/premium-minecraft-server-plans/netherite-plan/checkout" class="plan-btn">Get Netherite Plan →</a>
-            </div>
- 
+        <!-- EDITION SWITCH -->
+        <div class="pricing-tabs" style="margin-bottom:2.5rem;">
+            <button class="pricing-tab-btn active" id="edition-btn-bedrock" onclick="switchEditionTab('bedrock', this)">
+                <i class="fa-solid fa-mobile-screen-button"></i> Bedrock / Pocket Edition
+            </button>
+            <button class="pricing-tab-btn" id="edition-btn-java" onclick="switchEditionTab('java', this)">
+                <i class="fa-solid fa-cube"></i> Java Edition
+            </button>
         </div>
+
+        <!-- ===== BEDROCK / POCKET EDITION PLANS (default) ===== -->
+        <div class="edition-panel active" id="edition-bedrock">
+            <div class="plans-grid">
+
+                <!-- GRASS BEDROCK -->
+                <div class="plan-card">
+                    <div class="plan-name">Grass Plan Bedrock</div>
+                    <div class="plan-price">₹99<span>/mo</span></div>
+                    <div class="plan-divider"></div>
+                    <div class="plan-specs-label">Specifications</div>
+                    <div class="plan-specs">
+                        <div class="plan-spec"><i class="fa-solid fa-memory"></i><span class="plan-spec-text">2 GB RAM</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-microchip"></i><span class="plan-spec-text">70% CPU</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-hard-drive"></i><span class="plan-spec-text">10 GB NVMe SSD</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-cloud-arrow-up"></i><span class="plan-spec-text">1 Cloud Backup</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-network-wired"></i><span class="plan-spec-text">1 Allocation Port</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-database"></i><span class="plan-spec-text">1 Database</span></div>
+                    </div>
+                    <div class="plan-features">
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Bedrock &amp; Pocket Edition Supported</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> 24/7 Online</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> India Location Premium</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Unlimited Player Slots</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Powered by AMD EPYC / Intel CPUs</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Advanced DDoS Protection</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Premium Game Panel</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Free Subdomain</div>
+                    </div>
+                    <a href="https://billing.solocloud.site/products/bedrock-pocket-minecraft-servers-bds/grass-plan-bedrock/checkout" class="plan-btn">Add to Cart →</a>
+                </div>
+
+                <!-- WOOD BEDROCK -->
+                <div class="plan-card">
+                    <div class="plan-name">Wood Plan Bedrock</div>
+                    <div class="plan-price">₹139<span>/mo</span></div>
+                    <div class="plan-divider"></div>
+                    <div class="plan-specs-label">Specifications</div>
+                    <div class="plan-specs">
+                        <div class="plan-spec"><i class="fa-solid fa-memory"></i><span class="plan-spec-text">4 GB RAM</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-microchip"></i><span class="plan-spec-text">80% CPU</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-hard-drive"></i><span class="plan-spec-text">12 GB NVMe SSD</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-cloud-arrow-up"></i><span class="plan-spec-text">1 Cloud Backup</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-network-wired"></i><span class="plan-spec-text">1 Allocation Port</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-database"></i><span class="plan-spec-text">1 Database</span></div>
+                    </div>
+                    <div class="plan-features">
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Bedrock &amp; Pocket Edition Supported</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> 24/7 Online</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> India Location Premium</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Unlimited Player Slots</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Powered by AMD EPYC / Intel CPUs</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Advanced DDoS Protection</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Premium Game Panel</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Free Subdomain</div>
+                    </div>
+                    <a href="https://billing.solocloud.site/products/bedrock-pocket-minecraft-servers-bds/wood-plan-bedrock/checkout" class="plan-btn">Add to Cart →</a>
+                </div>
+
+                <!-- STONE BEDROCK -->
+                <div class="plan-card">
+                    <div class="plan-name">Stone Plan Bedrock</div>
+                    <div class="plan-price">₹189<span>/mo</span></div>
+                    <div class="plan-divider"></div>
+                    <div class="plan-specs-label">Specifications</div>
+                    <div class="plan-specs">
+                        <div class="plan-spec"><i class="fa-solid fa-memory"></i><span class="plan-spec-text">6 GB RAM</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-microchip"></i><span class="plan-spec-text">100% CPU</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-hard-drive"></i><span class="plan-spec-text">15 GB NVMe SSD</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-cloud-arrow-up"></i><span class="plan-spec-text">2 Cloud Backups</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-network-wired"></i><span class="plan-spec-text">2 Allocation Ports</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-database"></i><span class="plan-spec-text">1 Database</span></div>
+                    </div>
+                    <div class="plan-features">
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Bedrock &amp; Pocket Edition Supported</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> 24/7 Online</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> India Location Premium</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Unlimited Player Slots</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Powered by AMD EPYC / Intel CPUs</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Advanced DDoS Protection</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Premium Game Panel</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Free Subdomain</div>
+                    </div>
+                    <a href="https://billing.solocloud.site/products/bedrock-pocket-minecraft-servers-bds/stone-plan-bedrock/checkout" class="plan-btn">Add to Cart →</a>
+                </div>
+
+                <!-- IRON BEDROCK -->
+                <div class="plan-card">
+                    <div class="plan-name">Iron Plan Bedrock</div>
+                    <div class="plan-price">₹219<span>/mo</span></div>
+                    <div class="plan-divider"></div>
+                    <div class="plan-specs-label">Specifications</div>
+                    <div class="plan-specs">
+                        <div class="plan-spec"><i class="fa-solid fa-memory"></i><span class="plan-spec-text">8 GB RAM</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-microchip"></i><span class="plan-spec-text">100% CPU</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-hard-drive"></i><span class="plan-spec-text">20 GB NVMe SSD</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-cloud-arrow-up"></i><span class="plan-spec-text">2 Cloud Backups</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-network-wired"></i><span class="plan-spec-text">2 Allocation Ports</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-database"></i><span class="plan-spec-text">1 Database</span></div>
+                    </div>
+                    <div class="plan-features">
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Bedrock &amp; Pocket Edition Supported</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> 24/7 Online</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> India Location Premium</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Unlimited Player Slots</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Powered by AMD EPYC / Intel CPUs</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Advanced DDoS Protection</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Premium Game Panel</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Free Subdomain</div>
+                    </div>
+                    <a href="https://billing.solocloud.site/products/bedrock-pocket-minecraft-servers-bds/iron-plan-bedrock/checkout" class="plan-btn">Add to Cart →</a>
+                </div>
+
+                <!-- GOLD BEDROCK -->
+                <div class="plan-card popular">
+                    <div class="plan-badge">Popular</div>
+                    <div class="plan-name">Gold Plan Bedrock</div>
+                    <div class="plan-price">₹279<span>/mo</span></div>
+                    <div class="plan-divider"></div>
+                    <div class="plan-specs-label">Specifications</div>
+                    <div class="plan-specs">
+                        <div class="plan-spec"><i class="fa-solid fa-memory"></i><span class="plan-spec-text">12 GB RAM</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-microchip"></i><span class="plan-spec-text">100% CPU</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-hard-drive"></i><span class="plan-spec-text">20 GB NVMe SSD</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-cloud-arrow-up"></i><span class="plan-spec-text">3 Cloud Backups</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-network-wired"></i><span class="plan-spec-text">3 Allocation Ports</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-database"></i><span class="plan-spec-text">2 Databases</span></div>
+                    </div>
+                    <div class="plan-features">
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Bedrock &amp; Pocket Edition Supported</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> 24/7 Online</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> India Location Premium</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Unlimited Player Slots</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Powered by AMD EPYC / Intel CPUs</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Advanced DDoS Protection</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Premium Game Panel</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Free Subdomain</div>
+                    </div>
+                    <a href="https://billing.solocloud.site/products/bedrock-pocket-minecraft-servers-bds/gold-plan-bedrock/checkout" class="plan-btn">Add to Cart →</a>
+                </div>
+
+                <!-- EMERALD BEDROCK -->
+                <div class="plan-card">
+                    <div class="plan-name">Emerald Plan Bedrock</div>
+                    <div class="plan-price">₹389<span>/mo</span></div>
+                    <div class="plan-divider"></div>
+                    <div class="plan-specs-label">Specifications</div>
+                    <div class="plan-specs">
+                        <div class="plan-spec"><i class="fa-solid fa-memory"></i><span class="plan-spec-text">16 GB RAM</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-microchip"></i><span class="plan-spec-text">150% CPU</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-hard-drive"></i><span class="plan-spec-text">30 GB NVMe SSD</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-cloud-arrow-up"></i><span class="plan-spec-text">4 Cloud Backups</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-network-wired"></i><span class="plan-spec-text">3 Allocation Ports</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-database"></i><span class="plan-spec-text">2 Databases</span></div>
+                    </div>
+                    <div class="plan-features">
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Bedrock &amp; Pocket Edition Supported</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> 24/7 Online</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> India Location Premium</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Unlimited Player Slots</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Powered by AMD EPYC / Intel CPUs</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Advanced DDoS Protection</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Premium Game Panel</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Free Subdomain</div>
+                    </div>
+                    <a href="https://billing.solocloud.site/products/bedrock-pocket-minecraft-servers-bds/emerald-plan-bedrock/checkout" class="plan-btn">Add to Cart →</a>
+                </div>
+
+                <!-- DIAMOND BEDROCK -->
+                <div class="plan-card">
+                    <div class="plan-name">Diamond Plan Bedrock</div>
+                    <div class="plan-price">₹649<span>/mo</span></div>
+                    <div class="plan-divider"></div>
+                    <div class="plan-specs-label">Specifications</div>
+                    <div class="plan-specs">
+                        <div class="plan-spec"><i class="fa-solid fa-memory"></i><span class="plan-spec-text">24 GB RAM</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-microchip"></i><span class="plan-spec-text">250% CPU</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-hard-drive"></i><span class="plan-spec-text">40 GB NVMe SSD</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-cloud-arrow-up"></i><span class="plan-spec-text">5 Cloud Backups</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-network-wired"></i><span class="plan-spec-text">4 Allocation Ports</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-database"></i><span class="plan-spec-text">3 Databases</span></div>
+                    </div>
+                    <div class="plan-features">
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Bedrock &amp; Pocket Edition Supported</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> 24/7 Online</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> India Location Premium</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Unlimited Player Slots</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Powered by AMD EPYC / Intel CPUs</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Advanced DDoS Protection</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Premium Game Panel</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Free Subdomain</div>
+                    </div>
+                    <a href="https://billing.solocloud.site/products/bedrock-pocket-minecraft-servers-bds/diamond-plan-bedrock/checkout" class="plan-btn">Add to Cart →</a>
+                </div>
+
+                <!-- OBSIDIAN BEDROCK -->
+                <div class="plan-card">
+                    <div class="plan-name">Obsidian Plan Bedrock</div>
+                    <div class="plan-price">₹899<span>/mo</span></div>
+                    <div class="plan-divider"></div>
+                    <div class="plan-specs-label">Specifications</div>
+                    <div class="plan-specs">
+                        <div class="plan-spec"><i class="fa-solid fa-memory"></i><span class="plan-spec-text">32 GB RAM</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-microchip"></i><span class="plan-spec-text">350% CPU</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-hard-drive"></i><span class="plan-spec-text">50 GB NVMe SSD</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-cloud-arrow-up"></i><span class="plan-spec-text">5 Cloud Backups</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-network-wired"></i><span class="plan-spec-text">4 Allocation Ports</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-database"></i><span class="plan-spec-text">4 Databases</span></div>
+                    </div>
+                    <div class="plan-features">
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Bedrock &amp; Pocket Edition Supported</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> 24/7 Online</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> India Location Premium</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Unlimited Player Slots</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Powered by AMD EPYC / Intel CPUs</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Advanced DDoS Protection</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Premium Game Panel</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Free Subdomain</div>
+                    </div>
+                    <a href="https://billing.solocloud.site/products/bedrock-pocket-minecraft-servers-bds/obsidian-plan-bedrock/checkout" class="plan-btn">Add to Cart →</a>
+                </div>
+
+                <!-- NETHERITE BEDROCK -->
+                <div class="plan-card">
+                    <div class="plan-name">Netherite Plan Bedrock</div>
+                    <div class="plan-price">₹1,649<span>/mo</span></div>
+                    <div class="plan-divider"></div>
+                    <div class="plan-specs-label">Specifications</div>
+                    <div class="plan-specs">
+                        <div class="plan-spec"><i class="fa-solid fa-memory"></i><span class="plan-spec-text">64 GB RAM</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-microchip"></i><span class="plan-spec-text">500% CPU</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-hard-drive"></i><span class="plan-spec-text">60 GB NVMe SSD</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-cloud-arrow-up"></i><span class="plan-spec-text">7 Cloud Backups</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-network-wired"></i><span class="plan-spec-text">5 Allocation Ports</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-database"></i><span class="plan-spec-text">5 Databases</span></div>
+                    </div>
+                    <div class="plan-features">
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Bedrock &amp; Pocket Edition Supported</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> 24/7 Online</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> India Location Premium</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Unlimited Player Slots</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Powered by AMD EPYC / Intel CPUs</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Advanced DDoS Protection</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Premium Game Panel</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Free Subdomain</div>
+                    </div>
+                    <a href="https://billing.solocloud.site/products/bedrock-pocket-minecraft-servers-bds/netherite-plan-bedrock/checkout" class="plan-btn">Add to Cart →</a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ===== JAVA EDITION PLANS ===== -->
+        <div class="edition-panel" id="edition-java">
+            <div class="plans-grid">
+
+                <!-- GRASS -->
+                <div class="plan-card">
+                    <div class="plan-name">Grass Plan</div>
+                    <div class="plan-price">₹139<span>/mo</span></div>
+                    <div class="plan-divider"></div>
+                    <div class="plan-specs-label">Specifications</div>
+                    <div class="plan-specs">
+                        <div class="plan-spec"><i class="fa-solid fa-memory"></i><span class="plan-spec-text">2 GB RAM</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-microchip"></i><span class="plan-spec-text">70% CPU</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-hard-drive"></i><span class="plan-spec-text">10 GB NVMe SSD</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-cloud-arrow-up"></i><span class="plan-spec-text">1 Cloud Backup</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-network-wired"></i><span class="plan-spec-text">1 Allocation Port</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-database"></i><span class="plan-spec-text">1 Database</span></div>
+                    </div>
+                    <div class="plan-features">
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> 24/7 Online</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> India Location Premium</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Unlimited Player Slots</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Powered by AMD EPYC / Intel CPUs</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Advanced DDoS Protection</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Premium Game Panel</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Free Subdomain</div>
+                    </div>
+                    <a href="https://billing.solocloud.site/products/premium-minecraft-server-plans/grass-plan/checkout" class="plan-btn">Get Grass Plan →</a>
+                </div>
+
+                <!-- WOOD -->
+                <div class="plan-card">
+                    <div class="plan-name">Wood Plan</div>
+                    <div class="plan-price">₹189<span>/mo</span></div>
+                    <div class="plan-divider"></div>
+                    <div class="plan-specs-label">Specifications</div>
+                    <div class="plan-specs">
+                        <div class="plan-spec"><i class="fa-solid fa-memory"></i><span class="plan-spec-text">4 GB RAM</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-microchip"></i><span class="plan-spec-text">80% CPU</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-hard-drive"></i><span class="plan-spec-text">12 GB NVMe SSD</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-cloud-arrow-up"></i><span class="plan-spec-text">1 Cloud Backup</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-network-wired"></i><span class="plan-spec-text">1 Allocation Port</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-database"></i><span class="plan-spec-text">1 Database</span></div>
+                    </div>
+                    <div class="plan-features">
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> 24/7 Online</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> India Location Premium</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Unlimited Player Slots</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Powered by AMD EPYC / Intel CPUs</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Advanced DDoS Protection</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Premium Game Panel</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Free Subdomain</div>
+                    </div>
+                    <a href="https://billing.solocloud.site/products/premium-minecraft-server-plans/wood-plan/checkout" class="plan-btn">Get Wood Plan →</a>
+                </div>
+
+                <!-- STONE -->
+                <div class="plan-card">
+                    <div class="plan-name">Stone Plan</div>
+                    <div class="plan-price">₹249<span>/mo</span></div>
+                    <div class="plan-divider"></div>
+                    <div class="plan-specs-label">Specifications</div>
+                    <div class="plan-specs">
+                        <div class="plan-spec"><i class="fa-solid fa-memory"></i><span class="plan-spec-text">6 GB RAM</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-microchip"></i><span class="plan-spec-text">100% CPU</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-hard-drive"></i><span class="plan-spec-text">15 GB NVMe SSD</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-cloud-arrow-up"></i><span class="plan-spec-text">2 Cloud Backups</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-network-wired"></i><span class="plan-spec-text">2 Allocation Ports</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-database"></i><span class="plan-spec-text">1 Database</span></div>
+                    </div>
+                    <div class="plan-features">
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> 24/7 Online</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> India Location Premium</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Unlimited Player Slots</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Powered by AMD EPYC / Intel CPUs</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Advanced DDoS Protection</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Premium Game Panel</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Free Subdomain</div>
+                    </div>
+                    <a href="https://billing.solocloud.site/products/premium-minecraft-server-plans/stone-plan/checkout" class="plan-btn">Get Stone Plan →</a>
+                </div>
+
+                <!-- IRON -->
+                <div class="plan-card">
+                    <div class="plan-name">Iron Plan</div>
+                    <div class="plan-price">₹299<span>/mo</span></div>
+                    <div class="plan-divider"></div>
+                    <div class="plan-specs-label">Specifications</div>
+                    <div class="plan-specs">
+                        <div class="plan-spec"><i class="fa-solid fa-memory"></i><span class="plan-spec-text">8 GB RAM</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-microchip"></i><span class="plan-spec-text">100% CPU</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-hard-drive"></i><span class="plan-spec-text">20 GB NVMe SSD</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-cloud-arrow-up"></i><span class="plan-spec-text">2 Cloud Backups</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-network-wired"></i><span class="plan-spec-text">2 Allocation Ports</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-database"></i><span class="plan-spec-text">1 Database</span></div>
+                    </div>
+                    <div class="plan-features">
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> 24/7 Online</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> India Location Premium</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Unlimited Player Slots</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Powered by AMD EPYC / Intel CPUs</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Advanced DDoS Protection</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Premium Game Panel</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Free Subdomain</div>
+                    </div>
+                    <a href="https://billing.solocloud.site/products/premium-minecraft-server-plans/iron-plan/checkout" class="plan-btn">Get Iron Plan →</a>
+                </div>
+
+                <!-- GOLD -->
+                <div class="plan-card popular">
+                    <div class="plan-badge">Popular</div>
+                    <div class="plan-name">Gold Plan</div>
+                    <div class="plan-price">₹399<span>/mo</span></div>
+                    <div class="plan-divider"></div>
+                    <div class="plan-specs-label">Specifications</div>
+                    <div class="plan-specs">
+                        <div class="plan-spec"><i class="fa-solid fa-memory"></i><span class="plan-spec-text">12 GB RAM</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-microchip"></i><span class="plan-spec-text">100% CPU</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-hard-drive"></i><span class="plan-spec-text">20 GB NVMe SSD</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-cloud-arrow-up"></i><span class="plan-spec-text">3 Cloud Backups</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-network-wired"></i><span class="plan-spec-text">3 Allocation Ports</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-database"></i><span class="plan-spec-text">2 Databases</span></div>
+                    </div>
+                    <div class="plan-features">
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> 24/7 Online</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> India Location Premium</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Unlimited Player Slots</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Powered by AMD EPYC / Intel CPUs</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Advanced DDoS Protection</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Premium Game Panel</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Free Subdomain</div>
+                    </div>
+                    <a href="https://billing.solocloud.site/products/premium-minecraft-server-plans/gold-plan/checkout" class="plan-btn">Get Gold Plan →</a>
+                </div>
+
+                <!-- EMERALD -->
+                <div class="plan-card">
+                    <div class="plan-name">Emerald Plan</div>
+                    <div class="plan-price">₹599<span>/mo</span></div>
+                    <div class="plan-divider"></div>
+                    <div class="plan-specs-label">Specifications</div>
+                    <div class="plan-specs">
+                        <div class="plan-spec"><i class="fa-solid fa-memory"></i><span class="plan-spec-text">16 GB RAM</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-microchip"></i><span class="plan-spec-text">200% CPU</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-hard-drive"></i><span class="plan-spec-text">30 GB NVMe SSD</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-cloud-arrow-up"></i><span class="plan-spec-text">4 Cloud Backups</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-network-wired"></i><span class="plan-spec-text">3 Allocation Ports</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-database"></i><span class="plan-spec-text">2 Databases</span></div>
+                    </div>
+                    <div class="plan-features">
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> 24/7 Online</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> India Location Premium</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Unlimited Player Slots</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Powered by AMD EPYC / Intel CPUs</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Advanced DDoS Protection</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Premium Game Panel</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Free Subdomain</div>
+                    </div>
+                    <a href="https://billing.solocloud.site/products/premium-minecraft-server-plans/emerald-plan/checkout" class="plan-btn">Get Emerald Plan →</a>
+                </div>
+
+                <!-- DIAMOND -->
+                <div class="plan-card">
+                    <div class="plan-name">Diamond Plan</div>
+                    <div class="plan-price">₹899<span>/mo</span></div>
+                    <div class="plan-divider"></div>
+                    <div class="plan-specs-label">Specifications</div>
+                    <div class="plan-specs">
+                        <div class="plan-spec"><i class="fa-solid fa-memory"></i><span class="plan-spec-text">24 GB RAM</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-microchip"></i><span class="plan-spec-text">300% CPU</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-hard-drive"></i><span class="plan-spec-text">40 GB NVMe SSD</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-cloud-arrow-up"></i><span class="plan-spec-text">5 Cloud Backups</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-network-wired"></i><span class="plan-spec-text">4 Allocation Ports</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-database"></i><span class="plan-spec-text">3 Databases</span></div>
+                    </div>
+                    <div class="plan-features">
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> 24/7 Online</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> India Location Premium</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Unlimited Player Slots</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Powered by AMD EPYC / Intel CPUs</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Advanced DDoS Protection</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Premium Game Panel</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Free Subdomain</div>
+                    </div>
+                    <a href="https://billing.solocloud.site/products/premium-minecraft-server-plans/diamond-plan/checkout" class="plan-btn">Get Diamond Plan →</a>
+                </div>
+
+                <!-- OBSIDIAN -->
+                <div class="plan-card">
+                    <div class="plan-name">Obsidian Plan</div>
+                    <div class="plan-price">₹1,299<span>/mo</span></div>
+                    <div class="plan-divider"></div>
+                    <div class="plan-specs-label">Specifications</div>
+                    <div class="plan-specs">
+                        <div class="plan-spec"><i class="fa-solid fa-memory"></i><span class="plan-spec-text">32 GB RAM</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-microchip"></i><span class="plan-spec-text">400% CPU</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-hard-drive"></i><span class="plan-spec-text">50 GB NVMe SSD</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-cloud-arrow-up"></i><span class="plan-spec-text">5 Cloud Backups</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-network-wired"></i><span class="plan-spec-text">4 Allocation Ports</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-database"></i><span class="plan-spec-text">4 Databases</span></div>
+                    </div>
+                    <div class="plan-features">
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> 24/7 Online</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> India Location Premium</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Unlimited Player Slots</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Powered by AMD EPYC / Intel CPUs</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Advanced DDoS Protection</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Premium Game Panel</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Free Subdomain</div>
+                    </div>
+                    <a href="https://billing.solocloud.site/products/premium-minecraft-server-plans/obsidian-plan/checkout" class="plan-btn">Get Obsidian Plan →</a>
+                </div>
+
+                <!-- NETHERITE -->
+                <div class="plan-card">
+                    <div class="plan-name">Netherite Plan</div>
+                    <div class="plan-price">₹2,299<span>/mo</span></div>
+                    <div class="plan-divider"></div>
+                    <div class="plan-specs-label">Specifications</div>
+                    <div class="plan-specs">
+                        <div class="plan-spec"><i class="fa-solid fa-memory"></i><span class="plan-spec-text">64 GB RAM</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-microchip"></i><span class="plan-spec-text">600% CPU</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-hard-drive"></i><span class="plan-spec-text">60 GB NVMe SSD</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-cloud-arrow-up"></i><span class="plan-spec-text">7 Cloud Backups</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-network-wired"></i><span class="plan-spec-text">5 Allocation Ports</span></div>
+                        <div class="plan-spec"><i class="fa-solid fa-database"></i><span class="plan-spec-text">5 Databases</span></div>
+                    </div>
+                    <div class="plan-features">
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> 24/7 Online</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> India Location Premium</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Unlimited Player Slots</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Powered by AMD EPYC / Intel CPUs</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Advanced DDoS Protection</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Premium Game Panel</div>
+                        <div class="plan-feature"><i class="fa-solid fa-check"></i> Free Subdomain</div>
+                    </div>
+                    <a href="https://billing.solocloud.site/products/premium-minecraft-server-plans/netherite-plan/checkout" class="plan-btn">Get Netherite Plan →</a>
+                </div>
+
+            </div>
+        </div>
+
     </div>
-    
+
 </section>
 
 <!-- ===== FEATURES ===== -->
@@ -953,12 +1220,24 @@
         });
     });
 
-    // Pricing tab switcher
+    // Pricing tab switcher (Premium / Custom)
     function switchPricingTab(tab, btnEl) {
-        document.querySelectorAll('.pricing-tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.pricing-tabs').forEach(row => {
+            row.querySelectorAll(':scope > .pricing-tab-btn').forEach(b => b.classList.remove('active'));
+        });
         document.querySelectorAll('.pricing-panel').forEach(p => p.classList.remove('active'));
         btnEl.classList.add('active');
         document.getElementById('tab-' + tab).classList.add('active');
+    }
+
+    // Edition tab switcher (Bedrock / Java) — Bedrock shown by default
+    function switchEditionTab(edition, btnEl) {
+        document.getElementById('edition-btn-bedrock').classList.remove('active');
+        document.getElementById('edition-btn-java').classList.remove('active');
+        document.getElementById('edition-bedrock').classList.remove('active');
+        document.getElementById('edition-java').classList.remove('active');
+        btnEl.classList.add('active');
+        document.getElementById('edition-' + edition).classList.add('active');
     }
 </script>
 </body>
